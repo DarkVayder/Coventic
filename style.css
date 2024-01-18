@@ -1,22 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.hero{
+
+.hero {
     width: 100%;
     height: 100vh;
-    background: url(Coventic\ Webpage\ images/background.png);
+    background: url("Coventic Webpage images/background.png");
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
 }
-.logo{
+
+.logo {
     width: 100px;
     cursor: pointer;
 }
-.navbar{
+
+.navbar {
     width: 85%;
     height: 15%;
     margin: auto;
@@ -24,7 +27,8 @@
     align-items: center;
     justify-content: space-between;
 }
-button{
+
+button {
     color: #fbfcfd;
     background: transparent;
     cursor: pointer;
@@ -33,21 +37,8 @@ button{
     border-radius: 20px;
     border: 1px solid #fff;
 }
-.content{
-    color: #fbfcfd;
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    z-index: 2;
 
-}
-h1{
-    font-size: 80px;
-    margin: 10px 0 30px;
-    line-height: 80px;
-}
-.content{
+.content {
     color: #fbfcfd;
     position: absolute;
     top: 50%;
@@ -55,12 +46,14 @@ h1{
     transform: translateY(-50%);
     z-index: 2;
 }
-h1{
+
+h1 {
     font-size: 80px;
     margin: 10px 0 30px;
     line-height: 80px;
 }
-.side-bar{
+
+.side-bar {
     width: 50px;
     height: 90vh;
     background: linear-gradient(#00545d, #000729);
@@ -68,99 +61,106 @@ h1{
     right: 0;
     left: 0;
 }
-.menu{
+
+.menu {
     display: block;
     width: 25px;
     margin: 40px auto 0;
     cursor: pointer;
 }
-.social-links img{
+
+.social-links img,
+.useful-links img {
     width: 25px;
     margin: 5px auto;
     cursor: pointer;
 }
-.useful-links img{
-    width: 25px;
-    margin: 5px auto;
-    cursor: pointer;
-}
-.social-links{
+
+.social-links {
     width: 50px;
     text-align: center;
     position: absolute;
     top: 22.5%;
     transform: translateY(-50%);
 }
-.useful-links{
+
+.useful-links {
     width: 50px;
     text-align: center;
     position: absolute;
     bottom: 30px;
-    
 }
-.bubbles img{
+
+.bubbles img {
     width: 50px;
     animation: bubble 7s linear infinite;
 }
-.bubbles{
+
+.bubbles {
     width: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     position: absolute;
     bottom: -70px;
 }
-@keyframes bubble{
-    0%{
+
+@keyframes bubble {
+    0% {
         transform: translateY(0);
         opacity: 0;
     }
-    50%{
-        
+    50% {
         opacity: 1;
     }
-    70%{
-        
+    70% {
         opacity: 1;
     }
-    100%{
+    100% {
         transform: translateY(-80vh);
         opacity: 0;
     }
 }
 
-.bubbles img:nth-child(1){
+.bubbles img:nth-child(1) {
     animation-delay: 2s;
     width: 15px;
 }
-.bubbles img:nth-child(2){
+
+.bubbles img:nth-child(2) {
     animation-delay: 9s;
 }
-.bubbles img:nth-child(3){
+
+.bubbles img:nth-child(3) {
     animation-delay: 4s;
     width: 12px;
 }
-.bubbles img:nth-child(4){
-    animation-delay: 3s.7s;
+
+.bubbles img:nth-child(4) {
+    animation-delay: 3.7s; /* Corrected the syntax error here */
 }
-.bubbles img:nth-child(5){
+
+.bubbles img:nth-child(5) {
     animation-delay: 3s;
     width: 10px;
 }
-.bubbles img:nth-child(6){
+
+.bubbles img:nth-child(6) {
     animation-delay: 6s;
 }
-.bubbles img:nth-child(7){
+
+.bubbles img:nth-child(7) {
     animation-delay: 7s;
     width: 8px;
 }
-@media screen and (max-width: 600px)
-{
-    h1{
+
+@media screen and (max-width: 600px) {
+    h1 {
         font-size: 36px;
         line-height: 50px;
     }
-    .side-bar{
+
+    .side-bar {
         width: 100%;
         height: 50px;
         top: auto;
@@ -171,23 +171,20 @@ h1{
         padding: 0 10px;
         box-sizing: border-box;
     }
-    .social-links{
+
+    .social-links,
+    .useful-links {
         width: auto;
-        position: onset;
-        
+        position: unset; /* Corrected the property name */
         transform: none;
     }
-    .useful-links{
-        width: auto;
-        position: onset; 
-    }
-    .menu{
-        
+
+    .menu {
         width: 18px;
         margin: 0;
-        
     }
-    .hero{
+
+    .hero {
         background-image: linear-gradient(#000e2e, #004f5a);
     }
 }
